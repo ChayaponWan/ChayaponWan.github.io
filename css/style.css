@@ -1,0 +1,740 @@
+/* ---------- Reset & base ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Sarabun", "Segoe UI", Tahoma, sans-serif;
+  color: #333333;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 22px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ---------- Header ---------- */
+.header {
+  background-color: #ffffff;
+  border-bottom: 3px solid #111111;
+}
+
+.header-top {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo img {
+  height: 56px;
+  width: auto;
+}
+
+.university-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.thai-name {
+  font-size: 19px;
+  font-weight: 700;
+  color: #f26522;
+}
+
+.eng-name {
+  font-size: 13px;
+  color: #666666;
+}
+
+/* thin accent divider used on the homepage, sits flush above the navbar */
+.orange-line {
+  height: 4px;
+  background-color: #d9531e;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  background-color: #f26522;
+  padding: 12px 24px;
+}
+
+.navbar,
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 32px;
+}
+
+.navbar-inner {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navbar a {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Main (shared) ---------- */
+.main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 24px 56px;
+}
+
+.page-title {
+  color: #f26522;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ---------- Homepage sections ---------- */
+.hero-banner {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 32px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  color: #f26522;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.video {
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(17, 17, 17, 0.12);
+}
+
+.video iframe {
+  width: 100%;
+  height: 460px;
+  border: 0;
+  display: block;
+}
+
+.timeline-img {
+  max-width: 90%;
+  margin: 0 auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 12px rgba(17, 17, 17, 0.08);
+}
+
+/* ---------- Info card (apply page) ---------- */
+.info-card {
+  background-color: #ffffff;
+  border: 1px solid #eee0d6;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(17, 17, 17, 0.06);
+  padding: 24px 28px;
+  margin-bottom: 24px;
+  border-top: 4px solid #f26522;
+}
+
+.intro {
+  font-size: 14px;
+  color: #444444;
+  margin-bottom: 20px;
+}
+
+.info-block {
+  padding-left: 14px;
+  border-left: 3px solid #f9c9a6;
+  margin-bottom: 16px;
+}
+
+.info-block:last-child {
+  margin-bottom: 0;
+}
+
+.info-block--warning {
+  border-left-color: #f26522;
+}
+
+.section-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #222222;
+  margin-bottom: 6px;
+}
+
+.info-list {
+  font-size: 14px;
+  color: #444444;
+}
+
+.info-list li {
+  margin-bottom: 2px;
+}
+
+/* ---------- Success card (apply2 page) ---------- */
+.success-card {
+  background-color: #ffffff;
+  border: 1px solid #eee0d6;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(17, 17, 17, 0.06);
+  border-top: 4px solid #f26522;
+  padding: 48px 32px;
+  text-align: center;
+}
+
+.success-greeting {
+  font-size: 16px;
+  color: #222222;
+  margin-bottom: 10px;
+}
+
+.success-status {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a9e5c;
+  margin-bottom: 28px;
+}
+
+.success-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ---------- Form card (apply page) ---------- */
+.form-card {
+  background-color: #f26522;
+  border-radius: 6px;
+  padding: 40px;
+}
+
+.form-card form {
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="email"] {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.form-group input::placeholder {
+  color: #b3b3b3;
+}
+
+.form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.form-footer--end {
+  justify-content: flex-end;
+}
+
+/* ---------- Wizard (login2 page) ---------- */
+.wizard {
+  display: flex;
+  align-items: stretch;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(17, 17, 17, 0.1);
+}
+
+.wizard-sidebar {
+  flex: 0 0 220px;
+  background-color: #f26522;
+  padding: 40px 20px;
+}
+
+.step-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.step-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.step-item--done .step-circle {
+  background-color: #1a9e5c;
+}
+
+.step-item--active .step-circle {
+  background-color: #ffffff;
+  color: #f26522;
+}
+
+.step-label {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.wizard-content {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 32px;
+}
+
+.terms-box {
+  border: 1px solid #f7b78c;
+  border-radius: 6px;
+  padding: 24px 32px;
+}
+
+.terms-title {
+  color: #f26522;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+
+.terms-lead {
+  font-size: 14px;
+  color: #444444;
+  margin-bottom: 16px;
+}
+
+.terms-list {
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+.terms-list li {
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 12px;
+}
+
+.terms-list a {
+  color: #1a56db;
+  text-decoration: underline;
+}
+
+.terms-footnote {
+  font-size: 13px;
+  font-weight: 700;
+  color: #f26522;
+  margin-bottom: 20px;
+}
+
+.terms-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 720px) {
+  .wizard {
+    flex-direction: column;
+  }
+
+  .wizard-sidebar {
+    flex: none;
+    padding: 24px 20px;
+  }
+
+  .step-list {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .step-label {
+    display: none;
+  }
+
+  .wizard-content {
+    padding: 20px;
+  }
+
+  .terms-box {
+    padding: 20px;
+  }
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+}
+
+.btn-submit {
+  background-color: #ffffff;
+  color: #f26522;
+  border: none;
+  border-radius: 3px;
+  padding: 9px 22px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.btn-submit:hover {
+  background-color: #f4f4f4;
+}
+
+/* used on white/light backgrounds, e.g. the success card */
+.btn-primary {
+  display: inline-block;
+  background-color: #f26522;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  padding: 9px 24px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.btn-primary:hover {
+  background-color: #d9531e;
+}
+
+.btn-outline {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #666666;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  padding: 9px 24px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.btn-outline:hover {
+  background-color: #f4f4f4;
+}
+
+/* ---------- Application form panel (login3 page) ---------- */
+.form-panel {
+  background-color: #ffffff;
+  border: 1px solid #c9dcf5;
+  border-top: 6px solid #f26522;
+  border-radius: 6px;
+  padding: 28px 32px;
+}
+
+.form-section {
+  margin-bottom: 28px;
+}
+
+.form-section:last-of-type {
+  margin-bottom: 20px;
+}
+
+.form-section-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #222222;
+  margin-bottom: 16px;
+}
+
+.form-panel .form-group label {
+  color: #333333;
+}
+
+.form-panel .form-group input,
+.form-panel .form-group select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.form-panel .form-group input[type="file"] {
+  padding: 4px 0;
+  border: none;
+}
+
+.form-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.radio-inline {
+  display: flex;
+  gap: 24px;
+  padding-top: 6px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.checkbox-label--dark {
+  align-items: flex-start;
+  color: #333333;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.form-panel .form-footer {
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+/* ---------- Wizard success card (login4 page) ---------- */
+.success-card--wizard {
+  border: none;
+  box-shadow: none;
+  padding: 56px 32px;
+}
+
+.success-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background-color: #1a9e5c;
+  color: #ffffff;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.success-status--big {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.success-card--wizard .success-greeting {
+  color: #555555;
+  margin-bottom: 24px;
+}
+
+.application-ref {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 4px;
+  background-color: #fef4ee;
+  border: 1px dashed #f7b78c;
+  border-radius: 6px;
+  padding: 14px 32px;
+  margin-bottom: 24px;
+}
+
+.application-ref-label {
+  font-size: 12px;
+  color: #888888;
+}
+
+.application-ref-number {
+  font-size: 18px;
+  font-weight: 700;
+  color: #f26522;
+  letter-spacing: 0.5px;
+}
+
+.success-note {
+  font-size: 13px;
+  color: #666666;
+  max-width: 520px;
+  margin: 0 auto 28px;
+}
+
+.success-actions--center {
+  justify-content: center;
+  gap: 16px;
+}
+
+@media (max-width: 640px) {
+  .form-row-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.btn-submit:focus-visible,
+.form-group input:focus-visible,
+.checkbox-label input:focus-visible {
+  outline: 2px solid #111111;
+  outline-offset: 2px;
+}
+
+/* ---------- Footer (shared) ---------- */
+.footer {
+  background-color: #f26522;
+  color: #ffffff;
+  padding: 40px 0;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: space-between;
+}
+
+.footer-contact,
+.footer-social,
+.footer-map {
+  flex: 1 1 260px;
+}
+
+.footer h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.footer p {
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.phone {
+  margin-top: 6px;
+}
+
+.facebook-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  color: #f26522;
+  border-radius: 50%;
+  font-weight: 700;
+  font-family: Georgia, serif;
+}
+
+.footer-map iframe {
+  width: 100%;
+  max-width: 320px;
+  height: 200px;
+  border: 0;
+  border-radius: 4px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 640px) {
+  .header-top {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+
+  .navbar,
+  .navbar-inner {
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .form-card {
+    padding: 24px 20px;
+  }
+
+  .form-footer {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .video iframe {
+    height: 220px;
+  }
+
+  .footer-map iframe {
+    max-width: 100%;
+  }
+}
