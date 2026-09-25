@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>เข้าสู่ระบบ</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-top">
+      <div class="logo">
+        <img src="img/logo kmutnb final.png" alt="KMUTNB Logo">
+      </div>
+      <div class="university-text">
+        <div class="thai-name">รับสมัครนักศึกษา</div>
+        <div class="eng-name">มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</div>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <div class="navbar-inner">
+        <a href="index.html">หน้าแรก</a>
+        <a href="apply.html">ลงทะเบียน</a>
+        <a href="login.html">เข้าสู่ระบบ</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <h2 class="page-title">การสมัครเข้าศึกษาต่อ ปีการศึกษา 2570</h2>
+
+    <div class="wizard">
+      <!-- Step sidebar -->
+      <aside class="wizard-sidebar">
+        <ol class="step-list">
+          <li class="step-item step-item--done">
+            <span class="step-circle">1</span>
+            <span class="step-label">ยอมรับเงื่อนไขการสมัคร</span>
+          </li>
+          <li class="step-item step-item--done">
+            <span class="step-circle">2</span>
+            <span class="step-label">เลือกสาขาวิชาและป้อนข้อมูลการสมัคร</span>
+          </li>
+          <li class="step-item">
+            <span class="step-circle">3</span>
+            <span class="step-label">สมัครสำเร็จ</span>
+          </li>
+        </ol>
+      </aside>
+
+      <!-- Application form -->
+      <section class="wizard-content">
+        <form class="form-panel" onsubmit="window.location.href='login4.html'; return false;">
+
+          <!-- 1. สาขาวิชา -->
+          <div class="form-section">
+            <h4 class="form-section-title">1. เลือกสาขาวิชาและป้อนข้อมูลการสมัคร</h4>
+
+            <div class="form-group">
+              <label for="edu-level">ระดับการศึกษาที่จะสมัคร</label>
+              <select id="edu-level" name="edu-level">
+                <option value="" selected>-- กรุณาเลือก --</option>
+                <option>ประกาศนียบัตรวิชาชีพ (ปวช.)</option>
+                <option>ประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)</option>
+                <option>ปริญญาตรี</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="edu-type">ประเภทวิชา</label>
+              <select id="edu-type" name="edu-type">
+                <option value="" selected>-- กรุณาเลือก --</option>
+                <option>อุตสาหกรรม</option>
+                <option>บริหารธุรกิจ</option>
+                <option>เทคโนโลยีสารสนเทศ</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="edu-group">กลุ่มวิชา</label>
+              <select id="edu-group" name="edu-group">
+                <option value="" selected>-- กรุณาเลือก --</option>
+                <option>วิศวกรรมศาสตร์</option>
+                <option>วิทยาศาสตร์ประยุกต์</option>
+                <option>ครุศาสตร์อุตสาหกรรม</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="edu-major">สาขาวิชา</label>
+              <select id="edu-major" name="edu-major">
+                <option value="" selected>-- กรุณาเลือก --</option>
+                <option>วิศวกรรมคอมพิวเตอร์</option>
+                <option>วิศวกรรมไฟฟ้า</option>
+                <option>วิศวกรรมเครื่องกล</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="edu-track">สาขางาน</label>
+              <select id="edu-track" name="edu-track">
+                <option value="" selected>-- กรุณาเลือก --</option>
+                <option>ภาคปกติ</option>
+                <option>ภาคสมทบ</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- 2. สถานศึกษา -->
+          <div class="form-section">
+            <h4 class="form-section-title">2. ข้อมูลสถานศึกษาและสถานะการศึกษาปัจจุบัน</h4>
+
+            <div class="form-group">
+              <label for="school-province">จังหวัดที่ตั้งสถานศึกษา</label>
+              <select id="school-province" name="school-province">
+                <option value="" selected>-- กรุณาเลือก --</option>
+                <option>กรุงเทพมหานคร</option>
+                <option>นนทบุรี</option>
+                <option>ปทุมธานี</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="school-name">ชื่อสถานศึกษา</label>
+              <select id="school-name" name="school-name">
+                <option value="" selected>-- กรุณาเลือก --</option>
+                <option>โรงเรียน / วิทยาลัยเทคนิค</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>สถานะการศึกษา</label>
+              <div class="radio-inline">
+                <label class="radio-label"><input type="radio" name="study-status"> สำเร็จการศึกษา</label>
+                <label class="radio-label"><input type="radio" name="study-status"> กำลังศึกษาอยู่</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="gpa">คะแนนเฉลี่ยสะสมย้อนหลังเรียนสุดท้าย</label>
+              <input type="text" id="gpa" name="gpa" placeholder="เช่น 3.25">
+            </div>
+          </div>
+
+          <!-- 3. โครงการ -->
+          <div class="form-section">
+            <h4 class="form-section-title">3. ข้อมูลโครงการ คณะและสาขาวิชาที่สมัคร</h4>
+
+            <div class="form-group">
+              <label for="faculty">คณะ</label>
+              <select id="faculty" name="faculty">
+                <option value="" selected>-- กรุณาเลือก --</option>
+                <option>คณะวิศวกรรมศาสตร์</option>
+                <option>คณะวิทยาศาสตร์ประยุกต์</option>
+                <option>คณะครุศาสตร์อุตสาหกรรม</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="program">โครงการ</label>
+              <select id="program" name="program">
+                <option value="" selected>-- กรุณาเลือก --</option>
+                <option>โครงการรับตรง</option>
+                <option>โควตาพื้นที่</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- 4. ข้อมูลส่วนบุคคล -->
+          <div class="form-section">
+            <h4 class="form-section-title">4. ข้อมูลส่วนบุคคลและสถานที่ติดต่อ</h4>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="citizen-id2">เลขประจำตัวประชาชน</label>
+                <input type="text" id="citizen-id2" name="citizen-id2" placeholder="เลขประจำตัวประชาชน">
+              </div>
+              <div class="form-group">
+                <label for="guardian-id">เลขประจำตัวประชาชนผู้ปกครอง</label>
+                <input type="text" id="guardian-id" name="guardian-id" placeholder="เลขประจำตัวประชาชนผู้ปกครอง">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="title-name">คำนำหน้า</label>
+              <select id="title-name" name="title-name">
+                <option value="" selected>-- กรุณาเลือก --</option>
+                <option>นาย</option>
+                <option>นาง</option>
+                <option>นางสาว</option>
+              </select>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="firstname-th">ชื่อ (ภาษาไทย)</label>
+                <input type="text" id="firstname-th" name="firstname-th" placeholder="ชื่อ">
+              </div>
+              <div class="form-group">
+                <label for="lastname-th">นามสกุล (ภาษาไทย)</label>
+                <input type="text" id="lastname-th" name="lastname-th" placeholder="นามสกุล">
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="firstname-en">ชื่อ (ภาษาอังกฤษ)</label>
+                <input type="text" id="firstname-en" name="firstname-en" placeholder="First name">
+              </div>
+              <div class="form-group">
+                <label for="lastname-en">นามสกุล (ภาษาอังกฤษ)</label>
+                <input type="text" id="lastname-en" name="lastname-en" placeholder="Last name">
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="birthdate">วันเกิด</label>
+                <input type="date" id="birthdate" name="birthdate">
+              </div>
+              <div class="form-group">
+                <label for="religion">ศาสนา</label>
+                <input type="text" id="religion" name="religion" placeholder="ศาสนา">
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label>เพศ</label>
+                <div class="radio-inline">
+                  <label class="radio-label"><input type="radio" name="gender"> ชาย</label>
+                  <label class="radio-label"><input type="radio" name="gender"> หญิง</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="nationality">สัญชาติ</label>
+                <input type="text" id="nationality" name="nationality" placeholder="สัญชาติ">
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="ethnicity">เชื้อชาติ</label>
+                <input type="text" id="ethnicity" name="ethnicity" placeholder="เชื้อชาติ">
+              </div>
+              <div class="form-group">
+                <label for="house-no">บ้านเลขที่</label>
+                <input type="text" id="house-no" name="house-no" placeholder="บ้านเลขที่">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="parent-id">เลขประจำตัวประชาชนบิดา/มารดา</label>
+              <input type="text" id="parent-id" name="parent-id" placeholder="เลขประจำตัวประชาชนบิดา/มารดา">
+            </div>
+
+            <div class="form-group">
+              <label for="doc-transcript">หลักฐานการศึกษา (ใบรับรอง / ระเบียนแสดงผลการเรียน / Transcript หรือใบรับรองที่แสดงว่ากำลังศึกษาอยู่ในภาคเรียนสุดท้าย) (ไฟล์ .pdf)</label>
+              <input type="file" id="doc-transcript" name="doc-transcript" accept=".pdf">
+            </div>
+
+            <div class="form-group">
+              <label for="doc-photo">รูปถ่ายชุดนักเรียน ถ่ายไม่เกิน 6 เดือน ไม่ใส่แว่นตา ไม่สวมหมวก ขนาด 1-2 นิ้ว (ไฟล์ .pdf)</label>
+              <input type="file" id="doc-photo" name="doc-photo" accept=".pdf">
+            </div>
+
+            <div class="form-group">
+              <label for="doc-idcard">สำเนาบัตรประจำตัวประชาชน (หากมีการเปลี่ยนชื่อ-นามสกุล ให้แนบเอกสารประกอบการเปลี่ยนชื่อ) (ไฟล์ .pdf)</label>
+              <input type="file" id="doc-idcard" name="doc-idcard" accept=".pdf">
+            </div>
+
+            <div class="form-group">
+              <label class="checkbox-label checkbox-label--dark">
+                <input type="checkbox" name="confirm-truth">
+                ข้าพเจ้าขอรับรองว่าข้อมูลและเอกสารที่แนบมาทั้งหมดเป็นความจริงทุกประการ
+                และยินยอมให้มหาวิทยาลัยตรวจสอบข้อมูลเพื่อประกอบการพิจารณารับสมัคร
+              </label>
+            </div>
+          </div>
+
+          <div class="form-footer">
+            <a href="login2.html" class="btn-outline">ย้อนกลับ</a>
+            <button type="submit" class="btn-primary">ยืนยันการสมัคร</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-contact">
+        <h3>ติดต่อ</h3>
+        <p>กลุ่มงานรับเข้าศึกษา กองบริการการศึกษา</p>
+        <p>สำนักงานอธิการบดี ชั้น 2 อาคาร TGGS</p>
+        <p>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนคร</p>
+        <p>เหนือ 1518</p>
+        <p>ถนนประชาราษฎร์ 1 แขวงวงศ์สว่าง</p>
+        <p>เขตบางซื่อ กรุงเทพฯ 10800</p>
+        <p class="phone">☎ +66 2 555-2000 ต่อ 1626,1627</p>
+        <p class="phone">☎ +66 2 555-2171</p>
+      </div>
+
+      <div class="footer-social">
+        <h3>ติดตามเราได้ที่นี่</h3>
+        <a href="https://www.facebook.com/admission.kmutnb#" class="facebook-icon">f</a>
+      </div>
+
+      <div class="footer-map">
+        <h3>แผนที่</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991828.8006073144!2d99.29480537812503!3d13.819137000000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29b877800c9af%3A0xd754c571fc7177b!2z4Lih4Lir4Liy4Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4LmA4LiX4LiE4LmC4LiZ4LmC4Lil4Lii4Li14Lie4Lij4Liw4LiI4Lit4Lih4LmA4LiB4Lil4LmJ4Liy4Lie4Lij4Liw4LiZ4LiE4Lij4LmA4Lir4LiZ4Li34Lit!5e0!3m2!1sth!2sth!4v1788426462247!5m2!1sth!2sth"
+          loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
